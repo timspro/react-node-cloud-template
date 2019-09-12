@@ -33,13 +33,13 @@ You may wish to run `npm install && npm run build` on one server, and then copy 
 to the actual production server, where `npm run start-prod` can be run from within the `server` directory.
 
 The Node server is meant to be the bare minimum needed to serve a production React app in the same vein of:
-[[https://developer.mozilla.org/en-US/docs/Learn/Server-side/Node_server_without_framework]].
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Node_server_without_framework.
 It has not been optimized to increase the difficulty of DOS attacks against it (i.e. by limiting number of concurrent
 requests, reducing request timeouts/payloads, or preventing bad input from crashing the server).
 It does not set security-related headers:
-[[https://blog.risingstack.com/node-hero-node-js-security-tutorial/]]
+https://blog.risingstack.com/node-hero-node-js-security-tutorial/
 
-For more information about security, see [[https://itnext.io/how-we-improved-our-node-js-application-security-grade-from-f-to-a-cd42b48192e3]]
+For more information about security, see https://itnext.io/how-we-improved-our-node-js-application-security-grade-from-f-to-a-cd42b48192e3
 
 ### DANGEROUSLY_DISABLE_HOST_CHECK=true
 
