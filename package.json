@@ -1,0 +1,39 @@
+{
+  "name": "react-node-template",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8081",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
+    "start-react": "DANGEROUSLY_DISABLE_HOST_CHECK=true react-scripts start",
+    "start-server": "cd server && PORT_SERVER=8081 npm run start",
+    "start-prod": "cd server && npm run start-prod",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "cd server && npm install"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
