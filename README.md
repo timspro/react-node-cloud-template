@@ -18,6 +18,8 @@ The changes I have made outside of the `server` directory are as follows:
 
 Otherwise, the files should be the same as what would be produced by this version of create-react-app.
 
+create-react-app and the production server run on the port specified by the PORT environment variable or 3000 if unspecified.
+
 ## Node Server
 
 The Node server runs on port 8081. This can be changed by changing `react-node-template/package.json` on two lines.
